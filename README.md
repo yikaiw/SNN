@@ -38,7 +38,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --data=path/to/ILSVRC2012/  --batch
 * Create new folder `./models` and copy `checkpoint_ba.pth.tar` (obtained from Step1) to `./models`,
 * Run the folowing script,
 ```
-CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --data=path/to/ILSVRC2012/  --batch_size=512 --learning_rate=1e-3 --epochs=256 --weight_decay=1e-5 --bit-num=5
+CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --data=path/to/ILSVRC2012/  --batch_size=512 --learning_rate=1e-3 --epochs=256 --weight_decay=0 --bit-num=5
 ```
 * Comment: bit-num=5 corresponds to the 0.56 bit, bit-num indicates tau in the paper.
 
