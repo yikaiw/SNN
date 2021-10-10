@@ -19,7 +19,7 @@ If you find our code useful for your research, please consider citing:
 
 ## Dataset
 Following [this repository](https://github.com/pytorch/examples/tree/master/imagenet#requirements),
-- Download the ImageNet dataset from http://www.image-net.org/.
+- Download the ImageNet dataset from http://www.image-net.org.
 - Then move validation images to labeled subfolders, using [the following script](https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/valprep.sh).
 
 ## Requirements:
@@ -27,20 +27,20 @@ Following [this repository](https://github.com/pytorch/examples/tree/master/imag
 
 ## Training
 (1) Step1:  binarizing activations (or you can omit this step by using our Step1 model [`checkpoint_ba.pth.tar`](https://drive.google.com/file/d/1eKIA-XfWjeXdya6Qxgd71yuCXGNBVwds/view?usp=sharing)),
-* Change directory to `./step1/`,
+* Change directory to `./step1`,
 * Run the folowing script, 
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --data=path/to/ILSVRC2012/  --batch_size=512 --learning_rate=1e-3 --epochs=256 --weight_decay=1e-5
 ```
 
 (2) Step2:  binarizing weights + activations,
-* Change directory to `./step2/`,
+* Change directory to `./step2`,
 * Create new folder `./models` and copy `checkpoint_ba.pth.tar` (obtained from Step1) to `./models`,
 * Run the folowing script,
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --data=path/to/ILSVRC2012/  --batch_size=512 --learning_rate=1e-3 --epochs=256 --weight_decay=0 --bit-num=5
 ```
-* Comment: bit-num=5 corresponds to the 0.56 bit, bit-num indicates tau in the paper.
+* Comment: --bit-num=5 corresponds to 0.56 bit (bit-num indicates tau in the paper).
 
 ## Results
 This implementation is based on ResNet-18 of [ReActNet](https://github.com/liuzechun/ReActNet).
