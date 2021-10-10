@@ -19,9 +19,6 @@ class Binarize(nn.Module):
         if len(bnum_set) < 2 ** self.bit_num:
             patterns = remove_repetitive_patterns(self.patterns.data, self.bit_num)
             self.patterns.data = conpensate_patterns(weights, patterns, bnum_set, self.bit_num)
-            new_bnum_set = set(patterns2bnum(self.patterns.data))
-            print('conpensate_patterns:\n', bnum_set, '(%d)' % len(bnum_set), '->\n', \
-                 new_bnum_set, '(%d)' % len(new_bnum_set))
         self.patterns.data = torch.clamp(self.patterns.data, -3.0, 3.0)
 
     def forward(self, weights):  
