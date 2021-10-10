@@ -46,10 +46,10 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --data=path/to/ILSVRC2012/  --batch
 This implementation is based on ResNet-18 of [ReActNet](https://github.com/liuzechun/ReActNet).
 | Bit-Width | Top1-Acc | Top5-Acc | #Params | Bit-OPs | Model & Log |
 | --- | --- | --- | --- | --- | --- |
-| 1W / 1A | 65.7% | 86.3% | 10.99 Mbit | 1.677 G | [Google Drive](https://drive.google.com/drive/folders/1TWSIwzGottSGuNPHIs9jHIM7kQ0Ewl_z?usp=sharing) |
-| 0.67W / 1A | 63.4% | 84.5% | 7.324 Mbit | 0.883 G | [Google Drive](https://drive.google.com/drive/folders/1fTmzUaTe_E0J5kLqJI8Qlr1lUNWVcknL?usp=sharing) |
-| 0.56W / 1A | 62.1% | 83.8% | 6.103 Mbit | 0.501 G | [Google Drive](https://drive.google.com/drive/folders/1HiiyxhRsCwf4J0Hx3BrM9oGE_NTAK_Ph?usp=sharing) |
-| 0.44W / 1A | 60.7% | 82.7% | 4.882 Mbit | 0.297 G | [Google Drive](https://drive.google.com/drive/folders/1Q4B3QduAHKjK3JCmf1j7rNi0AQIviMC8?usp=sharing) |
+| 1W / 1A | 65.7% | 86.3% | 10.99Mbit | 1.677G | [Google Drive](https://drive.google.com/drive/folders/1TWSIwzGottSGuNPHIs9jHIM7kQ0Ewl_z?usp=sharing) |
+| 0.67W / 1A | 63.4% | 84.5% | 7.324Mbit | 0.883G | [Google Drive](https://drive.google.com/drive/folders/1fTmzUaTe_E0J5kLqJI8Qlr1lUNWVcknL?usp=sharing) |
+| 0.56W / 1A | 62.1% | 83.8% | 6.103Mbit | 0.501G | [Google Drive](https://drive.google.com/drive/folders/1HiiyxhRsCwf4J0Hx3BrM9oGE_NTAK_Ph?usp=sharing) |
+| 0.44W / 1A | 60.7% | 82.7% | 4.882Mbit | 0.297G | [Google Drive](https://drive.google.com/drive/folders/1Q4B3QduAHKjK3JCmf1j7rNi0AQIviMC8?usp=sharing) |
 
 ## License
 
