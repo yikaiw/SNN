@@ -6,17 +6,6 @@ This is the pytorch implementation of our paper ["Sub-bit Neural Networks: Learn
 <p align="center"><img src="intro.png" width="800" /></p>
 
 
-## Citation
-
-If you find our code useful for your research, please consider citing:
-
-    @inproceedings{wang2021snn,
-        title={Sub-bit Neural Networks: Learning to Compress and Accelerate Binary Neural Networks},
-        author={Wang, Yikai and Yang, Yi and Sun, Fuchun and Yao, Anbang},
-        booktitle={International Conference on Computer Vision (ICCV)},
-        year={2021}
-    }
-
 ## Dataset
 Following [this repository](https://github.com/pytorch/examples/tree/master/imagenet#requirements),
 - Download the ImageNet dataset from http://www.image-net.org.
@@ -50,6 +39,18 @@ This implementation is based on ResNet-18 of [ReActNet](https://github.com/liuze
 | 0.67W / 1A | 63.4% | 84.5% | 7.324Mbit | 0.883G | [Google Drive](https://drive.google.com/drive/folders/1fTmzUaTe_E0J5kLqJI8Qlr1lUNWVcknL?usp=sharing) |
 | 0.56W / 1A | 62.1% | 83.8% | 6.103Mbit | 0.501G | [Google Drive](https://drive.google.com/drive/folders/1HiiyxhRsCwf4J0Hx3BrM9oGE_NTAK_Ph?usp=sharing) |
 | 0.44W / 1A | 60.7% | 82.7% | 4.882Mbit | 0.297G | [Google Drive](https://drive.google.com/drive/folders/1Q4B3QduAHKjK3JCmf1j7rNi0AQIviMC8?usp=sharing) |
+
+
+## Citation
+
+If you find our code useful for your research, please consider citing:
+
+    @inproceedings{wang2021snn,
+        title={Sub-bit Neural Networks: Learning to Compress and Accelerate Binary Neural Networks},
+        author={Wang, Yikai and Yang, Yi and Sun, Fuchun and Yao, Anbang},
+        booktitle={International Conference on Computer Vision (ICCV)},
+        year={2021}
+    }
 
 ## License
 
