@@ -42,7 +42,6 @@ This implementation is based on ResNet-18 of [ReActNet](https://github.com/liuze
 
 
 ## Citation
-
 If you find our code useful for your research, please consider citing:
 
     @inproceedings{wang2021snn,
@@ -53,5 +52,4 @@ If you find our code useful for your research, please consider citing:
     }
 
 ## License
-
 SNN is released under MIT License.
