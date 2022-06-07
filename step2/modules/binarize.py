@@ -37,5 +37,5 @@ class Binarize(nn.Module):
                 - selected_patterns.detach() + selected_patterns
             self.check_conpensate_patterns(weights)
         else:
-            binary_weights = binary_weights.detach() - cliped_weights.detach() + cliped_weights \
+            binary_weights = binary_weights.detach() - cliped_weights.detach() + cliped_weights
         return binary_weights

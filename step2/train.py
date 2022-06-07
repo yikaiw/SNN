@@ -14,8 +14,7 @@ import torch.distributed as dist
 import torch.utils.data.distributed
 
 sys.path.append("../../")
-from utils.utils import *
-from utils import KD_loss
+from utils import *
 from torchvision import datasets, transforms
 from torch.autograd import Variable
 from birealnet import birealnet18
@@ -74,7 +73,7 @@ def main():
     criterion = criterion.cuda()
     criterion_smooth = CrossEntropyLabelSmooth(CLASSES, args.label_smooth)
     criterion_smooth = criterion_smooth.cuda()
-    criterion_kd = KD_loss.DistributionLoss()
+    criterion_kd = DistributionLoss()
 
     all_parameters = model_student.parameters()
     weight_parameters = []
@@ -97,6 +96,7 @@ def main():
     checkpoint = torch.load(checkpoint_tar)
     model_student.load_state_dict(checkpoint['state_dict'], strict=False)
 
+    # For resume
     checkpoint_tar = os.path.join(args.save, 'checkpoint.pth.tar')
     if os.path.exists(checkpoint_tar):
         logging.info('loading checkpoint {} ..........'.format(checkpoint_tar))
