@@ -1,7 +1,7 @@
 # Sub-bit Neural Networks: Learning to Compress and Accelerate Binary Neural Networks
 By Yikai Wang, Yi Yang, Fuchun Sun, Anbang Yao.
 
-This is the pytorch implementation of our paper ["Sub-bit Neural Networks: Learning to Compress and Accelerate Binary Neural Networks"](https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_Sub-Bit_Neural_Networks_Learning_To_Compress_and_Accelerate_Binary_Neural_ICCV_2021_paper.pdf), published in ICCV 2021.
+This pytorch implementation is **a two-stage improved version** of our paper ["Sub-bit Neural Networks: Learning to Compress and Accelerate Binary Neural Networks"](https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_Sub-Bit_Neural_Networks_Learning_To_Compress_and_Accelerate_Binary_Neural_ICCV_2021_paper.pdf), published in ICCV 2021.
 
 <p align="center"><img src="intro.png" width="800" /></p>
 
